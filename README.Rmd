@@ -30,7 +30,16 @@ You can install the development version of `MissObs` from [GitHub](https://githu
 devtools::install_github("stat545ubc-2023/MissObs")
 ```
 
-## Parameters
+## Usage
+
+count_all_missing_by_group(data, group_col, .groups = "drop")
+
+
+`data`: Data in data.frame or tibble format for which number of missing values is to be determined
+
+`group_col`: Column in data to group by
+
+`.groups`: (OPTIONAL) Controls whether the output data frame is grouped. By default, drops all levels of grouping ("drop"). Specify "keep" to keep the output data frame grouped by group. See summarize() documentation in dplyr for a full list of options.
 
 
 ## Example
@@ -52,4 +61,4 @@ missing_values
 
 ```
 
-In the tibble generated, you can see the function returned the total number or counts if missing values for each groups. For example, the value of the variable **flow** is missing 2 times from the minimum category for value is not missing from the maximum category of the group variable **extreme_type**
+In the tibble generated above, you can see the function`count_all_missing_by_group` returned the total number of missing values for each groups in a `group`. For example, there are two category for the group variable **extreme_type**. The value of the variable **flow** is missing 2 times from the minimum category, but it is not missing from the maximum category.
