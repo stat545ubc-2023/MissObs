@@ -47,10 +47,9 @@ library(datateachr)
 
 ## Calculate count of NAs or missing values for each level of extreme_type category in flow sample data.
 
-## In the tibble generated, you can see the function returned the total number or counts if missing values for each groups. For example, the value of the variable **flow** is missing 2 times from the minimum category for value is not missing from the maximum category of the group variable **extreme_type**
-
 missing_values<-count_all_missing_by_group(flow_sample, extreme_type, .groups = "drop")
 missing_values
 
 ```
 
+In the tibble generated, you can see the function returned the total number or counts if missing values for each groups. For example, the value of the variable **flow** is missing 2 times from the minimum category for value is not missing from the maximum category of the group variable **extreme_type**
