@@ -15,5 +15,6 @@ Suggests:
     tibble,
     tidyverse
 Imports:
-      dplyr
+    dplyr,
+    dyplr
 Config/testthat/edition: 3
