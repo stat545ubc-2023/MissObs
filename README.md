@@ -5,10 +5,11 @@
 
 Note: This package is prepared for practice only.
 
-The goal of this R package `MissObs` is to count missing values for all
-columns by group. The function `count_all_missing_by_group` takes the
-dataframe and returns a data frame or tibble with the number of NAs or
-missing values within each level of `group`.
+The objective of this R package `MissObs` is to count the number of
+missing values for all columns by group. The function
+`count_all_missing_by_group` takes the dataframe and returns a data
+frame or tibble with the number of NAs or missing values within each
+level of `group`.
 
 ## Installation
 
@@ -59,7 +60,7 @@ missing_values
 
 In the tibble generated above, you can see the
 function`count_all_missing_by_group` returned the total number of
-missing values for each groups in a `group`. For example, there are two
-category for the group variable **extreme_type**. The value of the
-variable **flow** is missing 2 times from the minimum category, but it
-is not missing from the maximum category.
+missing values. For example, there are two categories for the group
+variable **extreme_type**. The value of the continuous variable **flow**
+is missing two times from the minimum category, but it is not missing
+from the maximum category.
