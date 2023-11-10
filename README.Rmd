@@ -18,19 +18,22 @@ knitr::opts_chunk$set(
 Note: This package is prepared for practice only. 
 
 
-The goal of this R package `MissObs` is to count missing values for all columns by group. The function `count_all_missing_by_group` in this package takes the dataframe and returns a data frame or tibble with the levels of `group`, and the  number of NAs within each level of `group` for all columns in data except `group`.
+The goal of this R package `MissObs` is to count missing values for all columns by group. The function `count_all_missing_by_group` takes the dataframe and returns a data frame or tibble with the number of NAs or missing values within each level of `group`.
 
 
-# Installation
+## Installation
 
-You can install the development version of MissObs from [GitHub](https://github.com/) with:
+You can install the development version of `MissObs` from [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
+# install.packages("devtools"
 devtools::install_github("stat545ubc-2023/MissObs")
 ```
 
-# Example
+## Parameters
+
+
+## Example
 
 The simple example of what the package function does is provided below.
 
@@ -44,8 +47,10 @@ library(datateachr)
 
 ## Calculate count of NAs or missing values for each level of extreme_type category in flow sample data.
 
-missing_NAs<-count_all_missing_by_group(flow_sample, extreme_type, .groups = "drop")
-missing_NAs
+## In the tibble generated, you can see the function returned the total number or counts if missing values for each groups. For example, the value of the variable **flow** is missing 2 times from the minimum category for value is not missing from the maximum category of the group variable **extreme_type**
+
+missing_values<-count_all_missing_by_group(flow_sample, extreme_type, .groups = "drop")
+missing_values
 
 ```
-In the tibble generated, you can see the function returned the total number or counts if missing values for each groups. For example, the value of the variable **flow** is missing 2 times from the minimum category for value is not missing from the maximum category of the group variable **extreme_type**
+

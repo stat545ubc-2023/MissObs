@@ -1,3 +1,5 @@
+# Test  cases whether functions in this package work properly.
+
 test_that("Output matches direct call to dplyr", {
  small_tbl <- tibble::tribble(~group, ~var1, ~var2,
                        "A", 1, NA,

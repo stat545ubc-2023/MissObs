@@ -1,10 +1,10 @@
 Package: MissObs
-Title: An R package to calculate the count of missing values in a dataset
+Title: An R package to calculate the number of missing values in a dataset
 Version: 0.1.0
 Authors@R: 
     person("Gopal", "Khanal", , "khanal.joshipur@gmail.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: The package includes a function that allows to calculate number of missing values in a datset.
+           comment = c(ORCID = "https://orcid.org/0000-0001-6628-0015"))
+Description: The package includes a function that allows calculation of number of missing values in a dataset.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -15,6 +15,5 @@ Suggests:
     tibble,
     tidyverse
 Imports:
-    dplyr,
-    dyplr
+      dplyr
 Config/testthat/edition: 3
