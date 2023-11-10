@@ -7,7 +7,7 @@
 count_all_missing_by_group(data, group_col, .groups = "drop")
 }
 \arguments{
-\item{data}{Data in data.frame or tibble format}
+\item{data}{Data in data.frame or tibble format for which number of missing values is to be determined}
 
 \item{group_col}{Column in \code{data} to group by}
 

@@ -10,7 +10,7 @@
 #' @details This function is
 #' a wrapper around the `group_by()` and
 #' `summarize()` functions in the `dplyr` package
-#' @param data Data in data.frame or tibble format
+#' @param data Data in data.frame or tibble format for which number of missing values is to be determined
 #' @param group_col Column in `data` to group by
 #' @param .groups (OPTIONAL) Controls whether the
 #' output data frame is grouped. By default,
