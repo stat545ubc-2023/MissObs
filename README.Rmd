@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 Note: This package is prepared for practice only. 
 
 
-The goal of this R package `MissObs` is to count missing values for all columns by group. The function `count_all_missing_by_group` in this package takes the dataframe and returns a data frame or tibble with the levels of `group`, and the  number of NAs within each level of `group` for all columns in`data` except `group`.
+The goal of this R package `MissObs` is to count missing values for all columns by group. The function `count_all_missing_by_group` in this package takes the dataframe and returns a data frame or tibble with the levels of `group`, and the  number of NAs within each level of `group` for all columns in data except `group`.
 
 
 # Installation
