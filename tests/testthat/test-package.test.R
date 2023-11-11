@@ -21,7 +21,10 @@ test_that("Output matches direct call to dplyr", {
                   dplyr::summarize(dplyr::across(dplyr::everything(), ~sum(is.na(.x))),
                             .groups = NULL),
                 count_all_missing_by_group(small_tbl, group, NULL)
+
+       # Clean up the object after testing
   )
+  rm(small_tbl) ### Clean up objects in tests scripts with rm()
 })
 ## The second test checks the error handling for malformed `.groups` input arguments.
 ## This checks that the valid input `NULL` doesn't throw an error because `NULL`
@@ -34,3 +37,6 @@ test_that("Checking error handling for .groups input", {
     count_all_missing_by_group(airquality, Month, NULL)
   )
 })
+
+## This package won't work for non-tbl_df or non-tbl or non-data.frame input.
+## It also won't work if applicable method for 'group_by'is not applied to an object of class "c('double', 'numeric')
