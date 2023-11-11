@@ -64,3 +64,11 @@ missing values. For example, there are two categories for the group
 variable **extreme_type**. The value of the continuous variable **flow**
 is missing two times from the minimum category, but it is not missing
 from the maximum category.
+
+## Specific notes
+
+This package function `count_all_missing_by_group` will not allow one to
+get sum of all missing values in a dataset, and it also won’t work for
+non-tbl_df or non-tbl or non-data.frame input. It also won’t work if
+applicable method for ‘group_by’is not applied to an object of class
+“c(’double’, ‘numeric’)
